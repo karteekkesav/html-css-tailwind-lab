@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Variables And Theming</title>
+  <style>
+    :root {
+      --color-primary: #0f766e;
+      --color-surface: #f8fafc;
+      --space-md: 16px;
+    }
+
+    .card {
+      padding: var(--space-md);
+      background: var(--color-surface);
+      border-left: 4px solid var(--color-primary);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>CSS Variables And Theming</h1>
+    <article class="card">Theme values come from reusable CSS variables.</article>
+  </main>
+</body>
+</html>

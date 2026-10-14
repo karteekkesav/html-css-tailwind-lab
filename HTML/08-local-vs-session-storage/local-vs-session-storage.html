@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Storage vs Session Storage</title>
+</head>
+<body>
+  <main>
+    <h1>Local Storage vs Session Storage</h1>
+    <button type="button" id="save-local">Save theme in localStorage</button>
+    <button type="button" id="save-session">Save step in sessionStorage</button>
+    <p id="result" aria-live="polite"></p>
+  </main>
+
+  <script>
+    const result = document.querySelector("#result");
+
+    document.querySelector("#save-local").addEventListener("click", () => {
+      localStorage.setItem("theme", "dark");
+      result.textContent = "Saved theme=dark in localStorage.";
+    });
+
+    document.querySelector("#save-session").addEventListener("click", () => {
+      sessionStorage.setItem("currentStep", "identity");
+      result.textContent = "Saved currentStep=identity in sessionStorage.";
+    });
+  </script>
+</body>
+</html>

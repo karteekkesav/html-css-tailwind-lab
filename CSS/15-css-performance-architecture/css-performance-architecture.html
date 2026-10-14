@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Performance And Architecture</title>
+  <style>
+    :root {
+      --space-md: 16px;
+      --border-subtle: 1px solid #cbd5e1;
+    }
+
+    .card {
+      padding: var(--space-md);
+      border: var(--border-subtle);
+      transition: transform 180ms ease;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>CSS Performance And Architecture</h1>
+    <article class="card">Reusable token-based card style.</article>
+  </main>
+</body>
+</html>

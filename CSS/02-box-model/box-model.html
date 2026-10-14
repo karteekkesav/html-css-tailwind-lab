@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Box Model</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .document-card {
+        width: 320px;
+        margin: 24px;
+        padding: 20px;
+        border: 2px solid #0f766e;
+        background: #f8fafc;
+      }
+      .card {
+        border: 1px solid #d1d5db;
+        padding: 16px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>CSS Box Model</h1>
+      <article class="document-card">
+        <h2>Proof Of Identity</h2>
+        <p>
+          Content area plus padding, border, and margin create the full box.
+        </p>
+      </article>
+      <div class="card">Card One</div>
+      <div class="card">Card Two</div>
+    </main>
+  </body>
+</html>

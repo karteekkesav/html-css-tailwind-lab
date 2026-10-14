@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessibility Basics</title>
+</head>
+<body>
+  <main>
+    <h1>Accessibility Basics</h1>
+
+    <section aria-labelledby="profile-heading">
+      <h2 id="profile-heading">Update Profile</h2>
+
+      <label for="full-name">Full name</label>
+      <input id="full-name" name="fullName" type="text" autocomplete="name">
+
+      <button type="button">Save profile</button>
+    </section>
+
+    <section aria-labelledby="keyboard-heading">
+      <h2 id="keyboard-heading">Keyboard Friendly Controls</h2>
+      <p>Use the Tab key to reach the link and button below.</p>
+      <a href="https://developer.mozilla.org/">Read documentation</a>
+      <button type="button">Continue</button>
+    </section>
+  </main>
+</body>
+</html>

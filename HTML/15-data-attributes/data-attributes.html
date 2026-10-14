@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>data Attributes</title>
+</head>
+<body>
+  <main>
+    <h1>data Attributes</h1>
+
+    <button type="button" data-action="approve" data-request-id="REQ-1024">
+      Approve request
+    </button>
+
+    <button type="button" data-action="reject" data-request-id="REQ-1024">
+      Reject request
+    </button>
+
+    <p id="output" aria-live="polite"></p>
+  </main>
+
+  <script>
+    const output = document.querySelector("#output");
+
+    document.querySelectorAll("[data-action]").forEach((button) => {
+      button.addEventListener("click", () => {
+        output.textContent = `Action: ${button.dataset.action}, Request: ${button.dataset.requestId}`;
+      });
+    });
+  </script>
+</body>
+</html>

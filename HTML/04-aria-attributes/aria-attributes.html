@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARIA Attributes</title>
+</head>
+<body>
+  <main>
+    <h1>ARIA Attributes</h1>
+
+    <button type="button" aria-expanded="false" aria-controls="account-panel">
+      Account details
+    </button>
+
+    <section id="account-panel" aria-labelledby="account-heading">
+      <h2 id="account-heading">Account Details</h2>
+      <p id="account-help">This section contains your account verification status.</p>
+      <p aria-describedby="account-help">Status: Pending review</p>
+    </section>
+
+    <p aria-live="polite">No new notifications.</p>
+  </main>
+</body>
+</html>

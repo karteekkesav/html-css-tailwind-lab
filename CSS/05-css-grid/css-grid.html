@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid</title>
+  <style>
+    .dashboard {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      padding: 16px;
+      border: 1px solid #cbd5e1;
+      background: #f8fafc;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>CSS Grid</h1>
+    <section class="dashboard">
+      <article class="card">POI Pending</article>
+      <article class="card">POA Approved</article>
+      <article class="card">Liveness Review</article>
+    </section>
+  </main>
+</body>
+</html>

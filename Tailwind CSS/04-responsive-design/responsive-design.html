@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind Responsive Design</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 p-6 text-slate-900">
+  <main class="mx-auto max-w-6xl">
+    <h1 class="text-3xl font-bold">Responsive Dashboard</h1>
+    <p class="mt-2 text-slate-600">Resize the browser to see the cards move from 1 to 2 to 4 columns.</p>
+
+    <section class="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+      <article class="rounded-lg bg-white p-5 shadow-sm">Users</article>
+      <article class="rounded-lg bg-white p-5 shadow-sm">Revenue</article>
+      <article class="rounded-lg bg-white p-5 shadow-sm">Orders</article>
+      <article class="rounded-lg bg-white p-5 shadow-sm">Tickets</article>
+    </section>
+  </main>
+</body>
+</html>

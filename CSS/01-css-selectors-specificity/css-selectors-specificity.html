@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors And Specificity</title>
+    <style>
+      button {
+        color: #334155;
+      }
+      .action-button {
+        color: #0f766e;
+      }
+      #primary-action {
+        color: #b91c1c;
+      }
+      .btn:focus {
+        color: black;
+        background-color: aquamarine;
+      }
+      .form-input {
+        border: 1px solid #d1d5db;
+      }
+
+      .form-input:focus {
+        border-color: #2563eb;
+        outline: 2px solid #bfdbfe;
+      }
+      .users-table tr:nth-child(even) {
+        background-color: #bfdbfe;
+      }
+      .card::before {
+        content: "";
+        display: block;
+        height: 4px;
+        background: #2563eb;
+      }
+      .required-label::after {
+        content: " *";
+        color: #dc2626;
+      }
+      .message::before {
+        content: "Success: ";
+        color: #15803d;
+        font-weight: 700;
+      }
+      .form-input::placeholder {
+        color: #9ca3af;
+        font-style: italic;
+      }
+      .article-text::first-letter {
+        font-size: 32px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>CSS Selectors And Specificity</h1>
+      <button id="primary-action" class="action-button">
+        Submit onboarding application
+      </button>
+      <p>The ID selector wins because it has higher specificity.</p>
+      <button class="btn">psudo class</button>
+      <input class="form-input" type="text" placeholder="Enter name" />
+      <input class="terms-checkbox" type="checkbox" checked />
+      <label>I agree to the terms</label>
+    </main>
+    <section>
+      <table class="users-table">
+        <tr>
+          <td>Aarav</td>
+        </tr>
+        <tr>
+          <td>Diya</td>
+        </tr>
+        <tr>
+          <td>Kabir</td>
+        </tr>
+        <tr>
+          <td>Meera</td>
+        </tr>
+      </table>
+    </section>
+    <div class="card">
+      <h3>Account Details</h3>
+      <p>Update your profile information.</p>
+      <label class="required-label">Email</label>
+      <p class="message">Payment successful</p>
+      <input class="form-input" type="email" placeholder="Enter email" />
+      <p class="article-text">
+        selectors are one of the most important parts of CSS.
+      </p>
+    </div>
+  </body>
+</html>

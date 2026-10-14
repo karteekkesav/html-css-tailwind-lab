@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind Flex And Grid</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 p-6 text-slate-900">
+  <main class="mx-auto max-w-5xl space-y-6">
+    <section class="rounded-lg border border-slate-200 bg-white p-6">
+      <div class="flex items-center justify-between gap-4">
+        <h1 class="text-2xl font-bold">Users</h1>
+        <button class="rounded bg-blue-600 px-4 py-2 text-white">Add User</button>
+      </div>
+    </section>
+
+    <section class="grid grid-cols-1 gap-4 md:grid-cols-3">
+      <div class="rounded-lg bg-white p-6 shadow-sm">
+        <p class="text-sm text-slate-500">Users</p>
+        <p class="mt-2 text-3xl font-bold">1,248</p>
+      </div>
+      <div class="rounded-lg bg-white p-6 shadow-sm">
+        <p class="text-sm text-slate-500">Revenue</p>
+        <p class="mt-2 text-3xl font-bold">$42k</p>
+      </div>
+      <div class="rounded-lg bg-white p-6 shadow-sm">
+        <p class="text-sm text-slate-500">Orders</p>
+        <p class="mt-2 text-3xl font-bold">318</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

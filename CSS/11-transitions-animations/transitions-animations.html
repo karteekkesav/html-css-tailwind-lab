@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transitions And Animations</title>
+  <style>
+    .button {
+      transition: transform 180ms ease, background-color 180ms ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      background: #dbeafe;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .button {
+        transition: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Transitions And Animations</h1>
+    <button class="button" type="button">Upload document</button>
+  </main>
+</body>
+</html>

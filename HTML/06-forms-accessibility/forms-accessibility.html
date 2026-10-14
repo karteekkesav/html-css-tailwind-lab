@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Forms</title>
+</head>
+<body>
+  <main>
+    <h1>Accessible Onboarding Form</h1>
+
+    <form action="#" method="post">
+      <p id="form-help">Fields marked required must be completed before submission.</p>
+
+      <label for="email">Email address</label>
+      <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="form-help">
+
+      <fieldset>
+        <legend>Investor type</legend>
+        <label>
+          <input type="radio" name="investorType" value="individual">
+          Individual
+        </label>
+        <label>
+          <input type="radio" name="investorType" value="company">
+          Company
+        </label>
+      </fieldset>
+
+      <label for="identity-document">Proof of identity document</label>
+      <input id="identity-document" name="identityDocument" type="file" accept=".pdf,.jpg,.png">
+
+      <button type="submit">Submit application</button>
+    </form>
+  </main>
+</body>
+</html>

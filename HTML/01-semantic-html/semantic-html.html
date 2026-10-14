@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semantic HTML Example</title>
+</head>
+<body>
+  <header>
+    <h1>Digital Onboarding Portal</h1>
+    <nav aria-label="Primary navigation">
+      <a href="#identity">Identity</a>
+      <a href="#address">Address</a>
+      <a href="#review">Review</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="identity" aria-labelledby="identity-heading">
+      <h2 id="identity-heading">Proof Of Identity</h2>
+      <p>Upload a government-issued identity document.</p>
+    </section>
+
+    <section id="address" aria-labelledby="address-heading">
+      <h2 id="address-heading">Proof Of Address</h2>
+      <p>Provide a recent utility bill or bank statement.</p>
+    </section>
+
+    <article id="review" aria-labelledby="review-heading">
+      <h2 id="review-heading">Application Review</h2>
+      <p>Your submitted details will be reviewed by the onboarding team.</p>
+    </article>
+
+    <aside aria-labelledby="help-heading">
+      <h2 id="help-heading">Need Help?</h2>
+      <p>Keep your passport, address proof, and recent photo ready before starting verification.</p>
+      <a href="#identity">Review identity document requirements</a>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Frontend Practice</p>
+  </footer>
+</body>
+</html>

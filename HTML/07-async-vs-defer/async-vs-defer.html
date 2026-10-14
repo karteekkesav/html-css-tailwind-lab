@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>async vs defer</title>
+  <!-- defer keeps script order and runs after HTML parsing. -->
+  <script src="app.js" defer></script>
+  <!-- async is better for independent scripts such as analytics. -->
+  <script src="analytics.js" async></script>
+</head>
+<body>
+  <main>
+    <h1>async vs defer</h1>
+    <p>Open this file and inspect the script tags in the head.</p>
+  </main>
+</body>
+</html>

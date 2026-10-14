@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5 APIs</title>
+</head>
+<body>
+  <main>
+    <h1>HTML5 APIs</h1>
+
+    <button type="button" id="history-button">Add history state</button>
+    <button type="button" id="location-button">Check geolocation support</button>
+    <p id="api-output" aria-live="polite"></p>
+  </main>
+
+  <script>
+    const output = document.querySelector("#api-output");
+
+    document.querySelector("#history-button").addEventListener("click", () => {
+      history.pushState({ page: "html5-apis" }, "", "#html5-apis");
+      output.textContent = "History API updated the URL fragment.";
+    });
+
+    document.querySelector("#location-button").addEventListener("click", () => {
+      output.textContent = "geolocation" in navigator
+        ? "Geolocation API is supported."
+        : "Geolocation API is not supported.";
+    });
+  </script>
+</body>
+</html>

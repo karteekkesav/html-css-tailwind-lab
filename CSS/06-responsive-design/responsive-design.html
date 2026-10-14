@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Design</title>
+  <style>
+    .layout {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .panel {
+      padding: 16px;
+      border: 1px solid #cbd5e1;
+    }
+
+    @media (min-width: 768px) {
+      .layout {
+        grid-template-columns: 2fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Responsive Design</h1>
+    <section class="layout">
+      <article class="panel">Main onboarding form</article>
+      <aside class="panel">Help and requirements</aside>
+    </section>
+  </main>
+</body>
+</html>

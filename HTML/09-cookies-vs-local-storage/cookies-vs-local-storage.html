@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookies vs Local Storage</title>
+</head>
+<body>
+  <main>
+    <h1>Cookies vs Local Storage</h1>
+    <button type="button" id="set-cookie">Set sample cookie</button>
+    <button type="button" id="set-local">Set local storage value</button>
+    <p id="output" aria-live="polite"></p>
+  </main>
+
+  <script>
+    const output = document.querySelector("#output");
+
+    document.querySelector("#set-cookie").addEventListener("click", () => {
+      document.cookie = "practiceCookie=html; path=/; max-age=3600; SameSite=Lax";
+      output.textContent = "Cookie created. It can be sent with HTTP requests.";
+    });
+
+    document.querySelector("#set-local").addEventListener("click", () => {
+      localStorage.setItem("practicePreference", "compact-view");
+      output.textContent = "Local storage value created. It stays client-side.";
+    });
+  </script>
+</body>
+</html>

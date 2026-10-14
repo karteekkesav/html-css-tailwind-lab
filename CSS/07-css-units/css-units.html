@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Units</title>
+  <style>
+    .container {
+      width: min(90%, 720px);
+      margin: 2rem auto;
+      padding: 1rem;
+      border: 1px solid #cbd5e1;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1>CSS Units</h1>
+    <section class="grid">
+      <p>1fr column</p>
+      <p>2fr column</p>
+    </section>
+  </main>
+</body>
+</html>
